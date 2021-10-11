@@ -18,6 +18,16 @@ namespace producer.Controllers
         [HttpPost]
         public void Post([FromBody] TaskItem task)
         {
+
+            var r = new Request("/api/login", Method.POST);
+            var cl = new RestClient("https://reqres.in/api/login");
+
+            var response = cl.Execute(r);
+            //obtain the token from the response and then check
+
+            if (tokenobatined == null)
+                return //401 error code
+
             var factory = new ConnectionFactory()
             {   //HostName = "localhost" , 
                 //Port = 30724
@@ -46,5 +56,15 @@ namespace producer.Controllers
                                      body: body);
             }
         }
+
+        
+        
+            
+
+
+
+
+        
+
     }
 }
