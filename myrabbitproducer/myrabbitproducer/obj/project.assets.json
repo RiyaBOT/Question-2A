@@ -384,11 +384,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\riyasn\\Downloads\\Exam\\myrabbitproducer\\myrabbitproducer\\myrabbitproducer.csproj",
+      "projectUniqueName": "C:\\Users\\riyasn\\Downloads\\Exam\\Question-2A\\myrabbitproducer\\myrabbitproducer\\myrabbitproducer.csproj",
       "projectName": "myrabbitproducer",
-      "projectPath": "C:\\Users\\riyasn\\Downloads\\Exam\\myrabbitproducer\\myrabbitproducer\\myrabbitproducer.csproj",
+      "projectPath": "C:\\Users\\riyasn\\Downloads\\Exam\\Question-2A\\myrabbitproducer\\myrabbitproducer\\myrabbitproducer.csproj",
       "packagesPath": "C:\\Users\\riyasn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\riyasn\\Downloads\\Exam\\myrabbitproducer\\myrabbitproducer\\obj\\",
+      "outputPath": "C:\\Users\\riyasn\\Downloads\\Exam\\Question-2A\\myrabbitproducer\\myrabbitproducer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
