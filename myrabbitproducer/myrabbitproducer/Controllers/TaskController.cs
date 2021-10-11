@@ -16,17 +16,21 @@ namespace producer.Controllers
     {
 
         [HttpPost]
-        public void Post([FromBody] TaskItem task)
+        public UnauthorizedResult Post([FromBody] TaskItem task)
         {
 
             var r = new Request("/api/login", Method.POST);
+            r.AddJsonBody(task)
             var cl = new RestClient("https://reqres.in/api/login");
 
+            
+
             var response = cl.Execute(r);
+            TokenDTO tokenobtained = new JsonDeserializer().Deserialize(response);
             //obtain the token from the response and then check
 
-            if (tokenobatined == null)
-                return //401 error code
+            if (tokenobtained == null)
+                return Unauthorized(); //401 error code
 
             var factory = new ConnectionFactory()
             {   //HostName = "localhost" , 
